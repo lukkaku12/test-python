@@ -1,0 +1,14 @@
+service: tech-test-delete
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+
+functions:
+  hello:
+    handler: handler.handler
+    events:
+      - http:
+          path: precios
+          method: get
