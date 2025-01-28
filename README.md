@@ -31,7 +31,7 @@ curl "https://l2h237eh53.execute-api.us-east-1.amazonaws.com/dev/precios?start_d
 ## 🔄 Flujo de Procesamiento
 
 1. **Obtención de Datos (10 puntos)**
-   - Se solicita información de precios de energía mediante una API.
+   - Se solicita información de precios de energía mediante una API entre las fechas 2024-03-15 y 2024-04-14.
    - La solicitud debe incluir los parámetros `start_date` y `end_date` para especificar el rango de fechas.
    - Puntos adicionales: Manejo de errores HTTP
    - ¿Cuántos días se obtienen de datos?
@@ -56,7 +56,7 @@ curl "https://l2h237eh53.execute-api.us-east-1.amazonaws.com/dev/precios?start_d
    - Se debe calcular el **promedio diario** de precios.
    - Además, calcular un **promedio móvil de 7 días** de los precios diarios.
 
-5. **Visualización (15 puntos) **
+5. **Visualización (15 puntos)**
    - Se debe generar una gráfica que compare los promedios diarios con el promedio móvil de 7 días.
    - La gráfica debe ser clara, con leyenda y título apropiados.
    - Almacenar la gráfica como image.png
